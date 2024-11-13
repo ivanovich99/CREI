@@ -1,0 +1,11 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v5.4.0)
+
+newmtl Fox.material
+Kd 1 1 1
+Ke 0 0 0
+d 1
+Ns 1000
+illum 2
+map_Kd textures/image_0.png
+
