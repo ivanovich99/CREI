@@ -1,5 +1,5 @@
 // Declaración variables 
-// var
+// var 
 
 // Dimensiones del canvas y tamaño de ventana
 var width = window.innerWidth;
@@ -17,7 +17,7 @@ function init(){
   renderer.setSize(, );
   
   // Crear escena y cámara
-  // scene ) 
+  // scene =
 
   // Crear camara
   // camera = 
