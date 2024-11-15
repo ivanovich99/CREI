@@ -1,5 +1,5 @@
 // Declaración variables 
-// var 
+var scene, camera;
 
 // Dimensiones del canvas y tamaño de ventana
 var width = window.innerWidth;
@@ -29,7 +29,7 @@ function init(){
 
   
   // Crear luz direccional
-  directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+  light = new THREE.DirectionalLight(0xffffff, 0.8);
 
   // Posicion camara 
   // position
@@ -46,7 +46,7 @@ var loadOBJ = function(){
   var loader = new THREE.OBJLoader(manager);
   
   // Cargar Modelo 3D de Github  
-  loader.load('https://ivanovich99.github.io/GV/tallerCREI/fox.obj', agregarObj3D);
+  loader.load('https://ivanovich99.github.io/CREI/fox.obj', agregarObj3D);
 };
 
 // Inicio Funciones Modificaciones Objeto 
@@ -88,7 +88,7 @@ var agregarObj3D = function(objeto){
 // Funcion loop para renderizar en cada cambo 
 var render = function() {
   requestAnimationFrame(render);
-  // renderer.render( nombreEscena, nombreCamara);
+  renderer.render(scene, camera);
 };
 
 // Inicializar y renderizar
