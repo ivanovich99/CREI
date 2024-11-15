@@ -47,7 +47,7 @@ var loadOBJ = function(){
   var loader = new THREE.OBJLoader(manager);
   
   // Cargar Modelo 3D de Github  
-  loader.load('https://ivanovich99.github.io/GV/tallerCREI/fox.obj', agregarObj3D);
+  loader.load('https://ivanovich99.github.io/CREI/fox.obj', agregarObj3D);
 };
 
 // Inicio Funciones Modificaciones Objeto 
