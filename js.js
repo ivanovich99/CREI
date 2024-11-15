@@ -8,36 +8,38 @@ var height = window.innerHeight;
 // Función inicializar escena
 function init(){
   // Mandar a llamar Canvas del HTML
-  // canvas = 
+  canvas = document.getElementById("");
   gl = WebGLUtils.setupWebGL(canvas);
   
   // Render Obj3D 
   renderer = new THREE.WebGLRenderer({ canvas: canvas });
-  // Tamano renderer
-  renderer.setSize(, );
   
-  // Crear escena y cámara
-  // scene =
+  // Tamano renderer
+  renderer.setSize(00,00);
+  
+  // Crear escena 
+  // scene = new THREE.
 
   // Crear camara
-  // camera = 
+  // camera = new THREE.
 
-  // Posicion camara 
-  // position
+  // Posicion camara (x,y,z)
+  // camera.position
 
-  // Agregar luz a escena 
+  // Agregar camara a escena 
+  // scene.add
 
-  
-  // Crear luz direccional
+  // Crear luz direccional (color, intensidad)
   light = new THREE.DirectionalLight(0xffffff, 0.8);
 
-  // Posicion camara 
-  // position
+  // Posicion luz (x,y,z)
+  // light.position
 
-  // Agregar escena a camara 
+  // Agregar luz a escena 
+  // scene.add
   
   // Cargar OBJ
-  
+  loadOBJ();
 }
 
 // Cargar modelo 3D
@@ -52,23 +54,56 @@ var loadOBJ = function(){
 // Inicio Funciones Modificaciones Objeto 
 var agregarObj3D = function(objeto){
 
-  // Redimensionar objeto 
+  // Redimensionar objeto (x,y,z)
   objeto.scale.set(1, 1, 1);
   objeto.position.set(0, 0, 0);
 
-  // Sliders Rotaciones
+  // --- SLIDERS ROTACION ---
+  // Slider Rotacion X
   document.getElementById("").oninput = function() {
-    // rotation.
+    // objeto.rotation.x = parseFloat(this.value);
   };
 
-  // Escalamiento Sliders
+  // Slider Rotacion Y
   document.getElementById("").oninput = function() { 
-    // scale.
+    // objeto.rotation. =
   };
 
-  // Translación Sliders 
+  // Slider Rotacion Z
+  document.getElementById("").oninput = function() { 
+    // objeto.rotation. =
+  };
+
+  // --- SLIDERS ESCALAMIENTO ---
+  // Slider Escalamiento X
   document.getElementById("").oninput = function() {
-    // position.
+    // objeto.scale.x = parseFloat(this.value);
+  };
+
+  // Slider Escalamiento Y
+  document.getElementById("").oninput = function() { 
+    // objeto.scale. =
+  };
+
+  // Slider Escalamiento Z
+  document.getElementById("").oninput = function() { 
+    // objeto.scale. =
+  };
+
+  // --- SLIDERS TRASLACIÓN ---
+  // Slider Translación X
+  document.getElementById("").oninput = function() {
+    // objeto.position.x = parseFloat(this.value);
+  };
+
+  // Slider Translación Y
+  document.getElementById("").oninput = function() {
+    // objeto.position. = 
+  };
+
+  // Slider Translación Z
+  document.getElementById("").oninput = function() {
+    // objeto.position. = 
   };
 
   // Color Objeto 3D
