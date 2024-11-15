@@ -1,0 +1,80 @@
+<html>
+  <!--   Encabezado para librerias  -->
+  <head>
+    <script src="https://kpicos.github.io/GYV/webgl-utils.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.87.1/examples/js/loaders/OBJLoader.js"></script>
+  </head>
+  
+  <!--   Cuerpo de la pagina -->
+  <body>
+    <!--     Titulo de la pagina  -->
+    <div>
+      <h1> <b> Taller Gráficos y Visualización CREI </b> </h1>
+    </div>
+    
+    <!--  Canvas  -->
+    <div>
+      <canvas id = "scene"> </canvas> 
+    </div>
+    
+    </br>
+  
+  <!-- Sliders Rotacion -->
+  <div>  
+    Rotación X - Y - Z </br> 
+<!--    id = NombreUnico 
+        type = range 
+        min = Valor minimo que puede tomar 
+        max = Valor maximo que puede tomar 
+        step = Cada cuanto se va a desplazar (de 1 en 1, 2 en 2, ...) 
+    value="" /> -->
+    
+    <!-- Rotacion X -->
+   <input id="sliRotX" type="range"
+    min="-10" max="10" step="0.1" value="0" />
+
+    <!-- Rotacion Y -->
+     <input id="sliRotY" type="range"
+    min="-10" max="10" step="0.1" value="0" />  
+
+    <!-- Rotacion Z -->
+     <input id="sliRotZ" type="range"
+    min="-10" max="10" step="0.1" value="0" />  
+</div> 
+    
+<!-- Sliders Escalamiento -->
+<div>  
+    Escalamiento X - Y - Z </br>   
+  <!--   inputs  -->
+   <!-- Escalamiento X -->
+   <input id="sliEscX" type="range"
+    min="-10" max="10" step="0.1" value="0" />
+
+    <!-- Escalamiento Y -->
+     <input id="sliEscY" type="range"
+    min="-10" max="10" step="0.1" value="0" />
+
+    <!-- Escalamiento Z -->
+     <input id="sliEscZ" type="range"
+    min="-10" max="10" step="0.1" value="0" />
+</div> 
+
+  <!-- Sliders Traslación -->
+  <div>  
+    Traslación X - Y - Z </br> 
+    <!--   inputs  -->
+    <!-- Traslación X -->
+   <input id="sliTransX" type="range"
+    min="-10" max="10" step="0.1" value="0" />
+
+    <!-- Traslación Y -->
+      <input id="sliTransY" type="range"
+    min="-10" max="10" step="0.1" value="0" />
+
+    <!-- Traslación Z -->
+     <input id="sliTransZ" type="range"
+    min="-10" max="10" step="0.1" value="0" />
+</div> 
+    </body>
+</html>
